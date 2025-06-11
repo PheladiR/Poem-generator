@@ -1,3 +1,80 @@
 body{
-    background-color: blueviolet;
+    background-color: #d4a373;
+}
+h1{
+    font-weight: 800;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: center;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+.container{
+    margin: 120px auto;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+form{
+    padding: 30px;
+    background-color: #ede0d4;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    margin-bottom: 40px;
+}
+
+.instructions{
+    padding:16px;
+    border: 1px solid #adb5bd;
+    width: 80%;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 20px;
+}
+.submit-button{
+    border: none;
+    width: 20%;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-left: 10px;
+    color: azure;
+    background-color: #d4a373;
+
+}
+.poem{
+    --s: 11px;
+  --c: #222;
+ 
+  width: calc(20*var(--s));
+  aspect-ratio: 1.25;
+  background: 
+    conic-gradient(at 50% var(--s),var(--c) 75%,#0000 0) 
+    0 0/calc(2*var(--s)) calc(100% - var(--s)) padding-box;
+  border: var(--s) solid var(--c);
+  padding: calc(var(--s)*2.5) calc(var(--s)*1.5);
+  box-sizing: content-box; 
+  width: 20%;
+  padding: 50px;
+  padding-right: 68%;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+ border-radius: 20px;
+ color: aliceblue;
+ margin-bottom: 20px;
+ font-size: 16px;
+ line-height: 2;
+ /*filter: sepia(1) brightness(0.9) grayscale(.2);*/
+}
+
+footer{
+    text-align: center;
+    font-size: 14px;
+
+}
+a{
+    color: #432818;
 }
