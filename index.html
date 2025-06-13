@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
 </head>
 <body>
@@ -13,30 +15,25 @@
         </header>
         
         <main>
-                <form>
-                    <input type="text" placeholder="Enter the topic"
+                <form id="poem-form-generator">
+                    <input type="text" 
+                    placeholder="Enter the topic"
+                    class="instructions"
                     autofocus
                     required
-                    autocomplete="off"
-                    class="instructions">
+                    autocomplete="off"/>
                 <input type="submit"
-                class="submit-button">
+                class="submit-button"/>
                 </form>
-                <div class="poem">
-                    Deep in the heart of me,
-                    <br/>
-                    Nothing but You!  
-                    <br/>
-                    -by Ruth Guthrie Harding
-                </div>
+                <div class="poem"></div>
             </main>
-    </body>
-            <footer>This project is coded by <a href="https://github.com/PheladiR" target="_blank">Pheladi Rachoshi</a>
-             and is<a href="https://github.com/PheladiR/Poem-generator" target="_blank">open-sourced on Github</a>
-              and is hosted on <a href="https://poetica-ai.netlify.app/" target="_blank"> Netlify</a>
+            <footer>This project is coded by 
+                <a href="https://github.com/PheladiR" target="_blank">Pheladi Rachoshi</a>
+                and is
+                <a href="https://github.com/PheladiR/Poem-generator" target="_blank">open-sourced on Github</a>
+                 and is hosted on <a href="https://poetica-ai.netlify.app/" target="_blank"> Netlify</a>
             </footer>
-    </div>
-    
+    </div>    
 <script src="src/index.js"></script>
 </body>
 </html>

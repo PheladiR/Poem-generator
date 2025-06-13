@@ -46,11 +46,13 @@ form{
     background-color: #d4a373;
 
 }
+
 .poem{
     --s: 11px;
   --c: #222;
  
-  width: calc(20*var(--s));
+  /*width: calc(20*var(--s));*/
+  max-width: 100%;
   aspect-ratio: 1.25;
   background: 
     conic-gradient(at 50% var(--s),var(--c) 75%,#0000 0) 
@@ -58,11 +60,9 @@ form{
   border: var(--s) solid var(--c);
   padding: calc(var(--s)*2.5) calc(var(--s)*1.5);
   box-sizing: content-box; 
-  width: 20%;
-  padding: 50px;
-  padding-right: 68%;
+  /*width: 20%;*/
+  padding-right: 60%;
   box-shadow: 0px -25px 20px -20px rgba(154, 144, 144, 0.17), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
-  /*rgba(237, 205, 205, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);*/
   margin-bottom: 20px;
  color: aliceblue;
  margin-bottom: 20px;
@@ -71,7 +71,6 @@ form{
  border-radius: 20px;
  /*filter: sepia(1) brightness(0.9) grayscale(.2);*/
 }
-
 footer{
     text-align: center;
     font-size: 14px;
