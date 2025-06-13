@@ -13,11 +13,12 @@ header{
     margin-bottom: 30px;
 }
 
-.container{
-    margin: 120px auto;
+.container {
+    margin: 60px auto;
     max-width: 600px;
-    padding-left: 30px;
-}
+    padding: 0 20px;
+  }
+  
 
 form{
     display: flex;
@@ -51,7 +52,7 @@ form{
     margin-left: 10px;
     color: azure;
     background-color: #d4a373;
-
+cursor: pointer;
 }
 
 .poem {
@@ -87,10 +88,12 @@ form{
 footer{
     text-align: center;
     font-size: 14px;
+    margin-top: 40px;
 }
 
 a{
     color: #432818;
+    text-decoration: none;
 }
 
 .generating {
@@ -107,3 +110,37 @@ a{
       visibility: hidden;
     }
   }
+
+  /*Responsive Styling */
+@media (max-width: 600px) {
+    form {
+      flex-direction: column;
+    }
+  
+    .instructions {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .submit-button {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .poem {
+      font-size: 15px;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 28px;
+    }
+  
+    .poem {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+  }
+  
