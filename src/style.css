@@ -20,14 +20,21 @@ header{
 }
 
 form{
+    display: flex;
+   
+    
+}
+.form-container{
     padding: 30px;
     background-color: #ede0d4;
-    border-radius: 20px;
-    display: flex;
-    box-shadow: 0px -25px 20px -20px rgba(154, 144, 144, 0.17), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
     margin-bottom: 40px;
+    box-shadow: 0px -25px 20px -20px rgba(154, 144, 144, 0.17), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
 }
-
+.hint{
+    margin-top: 20px;
+    opacity: 0.7;
+}
 .instructions{
     padding:16px;
     border: 1px solid #adb5bd;
@@ -47,30 +54,36 @@ form{
 
 }
 
-.poem{
+.poem {
     --s: 11px;
-  --c: #222;
- 
-  /*width: calc(20*var(--s));*/
-  max-width: 100%;
-  aspect-ratio: 1.25;
-  background: 
-    conic-gradient(at 50% var(--s),var(--c) 75%,#0000 0) 
-    0 0/calc(2*var(--s)) calc(100% - var(--s)) padding-box;
-  border: var(--s) solid var(--c);
-  padding: calc(var(--s)*2.5) calc(var(--s)*1.5);
-  box-sizing: content-box; 
-  /*width: 20%;*/
-  padding-right: 60%;
-  box-shadow: 0px -25px 20px -20px rgba(154, 144, 144, 0.17), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
-  margin-bottom: 20px;
- color: aliceblue;
- margin-bottom: 20px;
- font-size: 16px;
- line-height: 2;
- border-radius: 20px;
- /*filter: sepia(1) brightness(0.9) grayscale(.2);*/
-}
+    --c: #222;
+  
+    width: 100%;
+    max-width: 600px;  
+    background: 
+      conic-gradient(at 50% var(--s), var(--c) 75%, #0000 0)
+      0 0 / calc(2 * var(--s)) calc(100% - var(--s)) padding-box;
+    border: var(--s) solid var(--c);
+  
+    box-sizing: border-box;
+    padding: calc(var(--s) * 2.5) calc(var(--s) * 1.5);  
+  
+    box-shadow: 0px -25px 20px -20px rgba(154, 144, 144, 0.17),
+                25px 0 20px -20px rgba(0, 0, 0, 0.45),
+                0px 25px 20px -20px rgba(0, 0, 0, 0.45),
+                -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  
+    margin: 0 auto 20px auto;
+    color: aliceblue;
+    font-size: 16px;
+    line-height: 2;
+    border-radius: 20px;
+  }
+
+  .hidden{
+    display: none;
+  }
+
 footer{
     text-align: center;
     font-size: 14px;
@@ -79,3 +92,18 @@ footer{
 a{
     color: #432818;
 }
+
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
