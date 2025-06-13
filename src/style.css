@@ -123,10 +123,11 @@ a{
     }
   
     .submit-button {
-      width: 45%;
-      margin-left: 120px;
-      padding: 10px;
-    }
+        width: 60%;
+        margin: 10px auto 0 auto;
+        display: block;
+        padding: 10px;
+      }
   
     .poem {
       font-size: 15px;
